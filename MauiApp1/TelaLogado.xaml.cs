@@ -1,9 +1,10 @@
 namespace MauiApp1;
 
-public partial class NewPage1 : ContentPage
+public partial class TelaLogado : ContentPage
 {
-	public NewPage1()
+	public TelaLogado()
 	{
 		InitializeComponent();
 	}
+
 }

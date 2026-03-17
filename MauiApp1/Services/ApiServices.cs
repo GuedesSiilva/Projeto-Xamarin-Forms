@@ -16,17 +16,17 @@ namespace MauiApp1.Services
                 if (client == null)
                 {
                     client = new HttpClient();
-                    client.BaseAddress = new Uri("http://localhost:5039/api/");
+                    client.BaseAddress = new Uri("http://10.0.2.2:5039/api/");
                 }
                 return client; }
         }
 
         public async static  Task<List<T>> getList(string url)
         {
-            var response = await client.GetAsync(url);
-            var contest = await response.Content.ReadAsStringAsync();
-            var json = JsonConvert.DeserializeObject<List<T>>(contest);
-            return json;
+            var response = await Client.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<T>>(content);
         }
     }
 }

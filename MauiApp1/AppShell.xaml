@@ -10,13 +10,11 @@
         Title="Menu"
         ContentTemplate="{DataTemplate local:TelaLogado}"
         Route="MainPage" />
-
-    <FlyoutItem Title="Voltar ao Login">
-        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
+    <FlyoutItem Title="Ir para Ranking Page">
+        <ShellContent ContentTemplate="{DataTemplate local:RankingPage}"/>
     </FlyoutItem>
-
-    <FlyoutItem Title="Voltar a Main Page">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+    <FlyoutItem Title="Ir para Abbout Page">
+        <ShellContent ContentTemplate="{DataTemplate local:AbboutPage}"/>
     </FlyoutItem>
 
 

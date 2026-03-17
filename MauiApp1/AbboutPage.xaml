@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.AbboutPage"
+             Title="AbboutPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="APP de introdução ao Xamarin Forms"
+            FontSize="22"
+            TextColor="Black"
+            FontAttributes="Bold"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
+    </VerticalStackLayout>
+</ContentPage>
