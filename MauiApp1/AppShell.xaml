@@ -7,7 +7,7 @@
     Title="Menu">
 
     <ShellContent
-        Title="Home"
+        Title="Menu"
         ContentTemplate="{DataTemplate local:TelaLogado}"
         Route="MainPage" />
 
